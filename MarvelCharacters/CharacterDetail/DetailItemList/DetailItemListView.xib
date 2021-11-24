@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailItemListView" customModule="MarvelCharacters" customModuleProvider="target">
+            <connections>
+                <outlet property="detailItemCollection" destination="49e-u1-fq8" id="FHI-v3-Qpu"/>
+                <outlet property="detailItemTitle" destination="eMB-mX-AFg" id="Kfn-w2-PVI"/>
+                <outlet property="noDataLbel" destination="Cyt-mt-QL3" id="g9V-24-a3s"/>
+                <outlet property="view" destination="iN0-l3-epB" id="7cM-xq-nVB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="792" height="343"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMB-mX-AFg">
+                    <rect key="frame" x="8" y="8" width="46" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="49e-u1-fq8">
+                    <rect key="frame" x="8" y="37" width="776" height="298"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ngp-JA-Ofo">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyt-mt-QL3">
+                    <rect key="frame" x="396" y="171.5" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Cyt-mt-QL3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0S4-yu-pnz"/>
+                <constraint firstItem="eMB-mX-AFg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="PG6-hW-HFh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="49e-u1-fq8" secondAttribute="trailing" constant="8" id="R4p-kn-ra0"/>
+                <constraint firstItem="Cyt-mt-QL3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XeU-Ye-Vzg"/>
+                <constraint firstItem="49e-u1-fq8" firstAttribute="top" secondItem="eMB-mX-AFg" secondAttribute="bottom" constant="8" id="Y8y-Qn-c1b"/>
+                <constraint firstItem="49e-u1-fq8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="YwE-lY-8u7"/>
+                <constraint firstAttribute="bottom" secondItem="49e-u1-fq8" secondAttribute="bottom" constant="8" id="coc-cN-bV6"/>
+                <constraint firstItem="eMB-mX-AFg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="xdf-rW-sfX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-77" y="142"/>
+        </view>
+    </objects>
+</document>
